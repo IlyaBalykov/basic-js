@@ -16,6 +16,7 @@ function deleteDigit(/* n */) {
   // remove line with error and write your code here
 }
 
+
 module.exports = {
   deleteDigit
 };
