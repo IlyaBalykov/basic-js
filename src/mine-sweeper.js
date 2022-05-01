@@ -23,9 +23,46 @@ const { NotImplementedError } = require('../extensions/index.js');
  *  [1, 1, 1]
  * ]
  */
-function minesweeper(/* matrix */) {
+function minesweeper(matrix) {
   throw new NotImplementedError('Not implemented');
   // remove line with error and write your code here
+  // let newArr = [
+  //   [true, false, false],
+  //   [false, true, false],
+  //   [false, false, false]
+  // ]
+  //
+  // let mineCount = 0
+  //
+  // for(let row = 0; row < 3; row++) {
+  //   for(let column = 0; column < matrix[0].length; column++) {
+  //     if(matrix[row][column+1] === true) {mineCount++}
+  //     if(row < matrix.length-1) {
+  //       if(matrix[row+1][column] && (matrix[row+1][column] === true)) {mineCount++}
+  //       if(matrix[row+1][column+1] && (matrix[row+1][column+1] === true)) {mineCount++}
+  //     }
+  //
+  //     if (row > 0) {
+  //       if(matrix[row-1][column] && (matrix[row-1][column] === true)) {mineCount++}
+  //       if(matrix[row-1][column+1] && (matrix[row-1][column+1] === true)) {mineCount++}
+  //     }
+  //
+  //     if(column > 0) {
+  //       if(matrix[row][column-1] === true) {mineCount++}
+  //       if(row < matrix.length-1) {
+  //         if(matrix[row+1][column-1] && (matrix[row+1][column-1] === true)) {mineCount++}
+  //       }
+  //
+  //       if (row > 0) {
+  //         if(matrix[row-1][column-1] && (matrix[row-1][column-1]=== true)) {mineCount++}
+  //       }
+  //     }
+  //
+  //     newArr[row].splice(column, 1, mineCount)
+  //     mineCount = 0
+  //   }
+  // }
+  // return newArr
 }
 
 module.exports = {
